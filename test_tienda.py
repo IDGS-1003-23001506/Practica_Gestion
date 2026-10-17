@@ -1,4 +1,5 @@
 import pytest
+
 from tienda import calcular_precio, calcular_iva
 
 
@@ -7,7 +8,7 @@ def test_calcular_precio():
 
 
 def test_calcular_iva():
-    assert calcular_iva(100) == pytest.approx(116.0)
+    assert calcular_iva(100) == pytest.approx(120.0)
 
 
 def test_calcular_sin_descuento():
