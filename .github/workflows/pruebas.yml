@@ -20,6 +20,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Ejecutar pruebas
-        run: |
-          python -m pytest -v
+      - name: Ejecutar pruebas unitarias
+        run: python -m pytest test_tienda.py -v
+
+      - name: Ejecutar pruebas integración
+        run: python -m pytest test_main.py -v
+
+      - name: Ejecutar pruebas sistema
+        run: python -m pytest system.py -v
