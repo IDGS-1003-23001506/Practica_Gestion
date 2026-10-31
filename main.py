@@ -1,4 +1,4 @@
-from tienda import calcular_precio, calcular_iva
+from devops_tienda.tienda import calcular_precio, calcular_iva
 
 def main():
     precio = float(input("Ingrese el precio del producto: "))

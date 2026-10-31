@@ -1,6 +1,9 @@
 import pytest
 
-from src.devops_tienda.tienda import calcular_precio, calcular_iva
+try:
+    from devops_tienda.tienda import calcular_precio, calcular_iva
+except ImportError:
+    from src.devops_tienda.tienda import calcular_precio, calcular_iva
 
 
 def test_calcular_precio():
